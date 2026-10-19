@@ -44,6 +44,12 @@ const cloud = {
   const kind = cloud;
   const canvas = document.createElement('canvas'); canvas.className = 'hero-bg'; canvas.setAttribute('aria-hidden', 'true');
   const mask = document.createElement('div'); mask.className = 'hero-mask';
+  // Estilos esenciales en línea: funciona aunque el navegador tenga un styles.css antiguo en caché
+  hero.style.position = 'relative'; hero.style.overflow = 'hidden';
+  canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0;pointer-events:none';
+  mask.style.cssText = 'position:absolute;inset:0;pointer-events:none;z-index:1';
+  const inner = hero.querySelector('.hero-inner');
+  if (inner) { inner.style.position = 'relative'; inner.style.zIndex = '2'; }
   hero.prepend(mask); hero.prepend(canvas);
   const ctx = canvas.getContext('2d');
   const d = { w: 0, h: 0, state: null, t0: performance.now(), visible: true, raf: 0, m: { x: 0, y: 0, tx: 0, ty: 0 } };
