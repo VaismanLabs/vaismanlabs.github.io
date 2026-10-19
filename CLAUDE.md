@@ -34,5 +34,4 @@ Publicado en https://vaismanlabs.github.io (GitHub Pages, repo `VaismanLabs/vais
 
 ## Artefactos relacionados (privados, en claude.ai)
 
-- Registro de envíos del sitio (contactos, estado, plantilla de mensaje por WhatsApp con `{nombre}` y `{empresa}`): https://claude.ai/artifact/4JqiCBaDP2Aq4SevR2QvhG — los datos viven en su base (`envios`, `config/plantilla`); leer y escribir con la herramienta de datos del artefacto, nunca copiar datos de contactos a este repo (es público).
 - Exploración de logos: https://claude.ai/artifact/F5ov5oSjBPCpVocSrBmY2H
