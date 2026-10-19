@@ -7,7 +7,8 @@ Publicado en https://vaismanlabs.github.io (GitHub Pages, repo `VaismanLabs/vais
 
 - Idioma: español de Chile, tuteo. Respuestas breves y precisas; preguntar si algo no está claro.
 - Cambios de texto: editar `index.html`, commit y push directo a `main` (autorizado). GitHub Pages despliega en ~1 min; verificar con `curl -s https://vaismanlabs.github.io/ | grep '<texto nuevo>'`.
-- Sitio estático sin build: `index.html`, `styles.css`, `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `og.png` (vista previa 1200×630), `.nojekyll`.
+- Sitio estático sin build: `index.html`, `styles.css`, `hero-bg.js` (fondo animado de la portada: nube de puntos que forma la V), `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `og.png` (vista previa 1200×630), `.nojekyll`.
+- **Caché:** GitHub Pages cachea 10 min. Al cambiar `styles.css` o `hero-bg.js`, subir el `?v=` en `index.html` (p. ej. `styles.css?v=20261019b`) para que los visitantes no vean estilos antiguos.
 - Para revisar diseño: captura con Chromium headless (`/opt/pw-browsers/chromium-*/chrome-linux/chrome --headless --screenshot`).
 
 ## Identidad visual ("Grafito Editorial")
